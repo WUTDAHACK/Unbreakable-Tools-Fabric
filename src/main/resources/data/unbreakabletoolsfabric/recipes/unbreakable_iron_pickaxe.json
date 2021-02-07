@@ -4,17 +4,9 @@
     {
       "item": "minecraft:iron_pickaxe"
     },
+
     {
-      "item": "minecraft:enchanted_book",
-      "nbt":
-      {
-         "enchantments": [
-            {
-               "id": "minecraft:unbreaking",
-               "lvl": 1
-            }
-         ]
-      }
+      "item": "unbreakabletoolsfabric:unbreakable_book"
     }
   ],
   "result": {

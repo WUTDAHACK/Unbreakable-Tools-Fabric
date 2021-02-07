@@ -4,14 +4,9 @@
     {
       "item": "minecraft:wooden_sword"
     },
+
     {
-      "item": "minecraft:enchanted_book",
-         "Enchantments": [
-            {
-               "id": "minecraft:unbreaking",
-               "lvl": 1
-            }
-       ]
+      "item": "unbreakabletoolsfabric:unbreakable_book"
     }
   ],
   "result": {

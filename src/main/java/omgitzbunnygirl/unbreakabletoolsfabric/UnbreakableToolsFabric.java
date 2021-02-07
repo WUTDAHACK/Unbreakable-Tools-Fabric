@@ -2,17 +2,23 @@ package omgitzbunnygirl.unbreakabletoolsfabric;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
+import net.fabricmc.fabric.api.loot.v1.FabricLootPoolBuilder;
+import net.fabricmc.fabric.api.loot.v1.event.LootTableLoadingCallback;
 import net.minecraft.item.ToolItem;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ToolMaterials;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
+import net.minecraft.loot.ConstantLootTableRange;
+import net.minecraft.loot.UniformLootTableRange;
+import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import omgitzbunnygirl.unbreakabletoolsfabric.item.*;
 
 public class UnbreakableToolsFabric implements ModInitializer {
+
 
     public static final ItemGroup UNBREAKABLE_TOOLS_GROUP = FabricItemGroupBuilder.build(new Identifier("unbreakabletoolsfabric", "unbreakable_tools_group"), () -> new ItemStack(Items.ENCHANTED_BOOK));
 
@@ -63,6 +69,20 @@ public class UnbreakableToolsFabric implements ModInitializer {
     // Other Tools
     public static UnbreakableBowItem UNBREAKABLE_BOW = new UnbreakableBowItem(new Item.Settings().group(UNBREAKABLE_TOOLS_GROUP).maxDamage(-2147483648));
 
+    // Unbreakable Book
+    public static UnbreakableBookItem UNBREAKABLE_BOOK = new UnbreakableBookItem(new Item.Settings().group(UNBREAKABLE_TOOLS_GROUP).maxCount(1).maxDamage(-2147483648));
+
+    // Loot Tables
+    private static final Identifier ABANDONED_MINESHAFT_LOOT_TABLE_ID = new Identifier("minecraft", "chests/abandoned_mineshaft");
+    private static final Identifier BURIED_TREASURE_LOOT_TABLE_ID = new Identifier("minecraft", "chests/buried_treasure");
+    private static final Identifier DESERT_PYRAMID_LOOT_TABLE_ID = new Identifier("minecraft", "chests/desert_pyramid");
+    private static final Identifier JUNGLE_TEMPLE_LOOT_TABLE_ID = new Identifier("minecraft", "chests/jungle_temple");
+    private static final Identifier SHIPWRECK_TREASURE_LOOT_TABLE_ID = new Identifier("minecraft", "chests/shipwreck_treasure");
+    private static final Identifier SIMPLE_DUNGEON_LOOT_TABLE_ID = new Identifier("minecraft", "chests/simple_dungeon");
+    private static final Identifier STRONGHOLD_LIBRARY_LOOT_TABLE_ID = new Identifier("minecraft", "chests/stronghold_library");
+    private static final Identifier TREASURE_FISHING_LOOT_TABLE_ID = new Identifier("minecraft", "gameplay/fishing/treasure");
+
+
     @Override
     public void onInitialize() {
         // Tools
@@ -110,6 +130,115 @@ public class UnbreakableToolsFabric implements ModInitializer {
 
         // Other Tools
         Registry.register(Registry.ITEM, new Identifier("unbreakabletoolsfabric", "unbreakable_bow"), UNBREAKABLE_BOW);
+
+        // Unbreakable Book
+        Registry.register(Registry.ITEM, new Identifier("unbreakabletoolsfabric", "unbreakable_book"), UNBREAKABLE_BOOK);
+
+
+        // Loot tables
+        // Abandoned Minseshaft
+        LootTableLoadingCallback.EVENT.register((resourceManager, lootManager, id, supplier, setter) -> {
+            if (ABANDONED_MINESHAFT_LOOT_TABLE_ID.equals(id)) {
+                FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
+                        .rolls(ConstantLootTableRange.create(1))
+                        .withEntry(ItemEntry.builder(UNBREAKABLE_BOOK)
+                        .weight(10)
+                        .build());
+
+                supplier.withPool(poolBuilder.build());
+            }
+        });
+
+        // Buried Treasure
+        LootTableLoadingCallback.EVENT.register((resourceManager, manager, id, supplier, setter) -> {
+            if (BURIED_TREASURE_LOOT_TABLE_ID.equals(id)) {
+                FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
+                        .rolls(ConstantLootTableRange.create(1))
+                        .withEntry(ItemEntry.builder(UNBREAKABLE_BOOK)
+                        .weight(5)
+                        .build());
+
+                supplier.withPool(poolBuilder.build());
+            }
+        });
+
+        // Desert Pyramid
+        LootTableLoadingCallback.EVENT.register((resourceManager, manager, id, supplier, setter) -> {
+            if (DESERT_PYRAMID_LOOT_TABLE_ID.equals(id)) {
+                FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
+                        .rolls(UniformLootTableRange.between(2.0F, 4.0F))
+                        .withEntry(ItemEntry.builder(UNBREAKABLE_BOOK)
+                        .weight(10)
+                        .build());
+
+                supplier.withPool(poolBuilder.build());
+            }
+        });
+
+        // Jungle Temple
+        LootTableLoadingCallback.EVENT.register((resourceManager, manager, id, supplier, setter) -> {
+            if (JUNGLE_TEMPLE_LOOT_TABLE_ID.equals(id)) {
+                FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
+                        .rolls(UniformLootTableRange.between(2.0F, 6.0F))
+                        .withEntry(ItemEntry.builder(UNBREAKABLE_BOOK)
+                        .weight(10)
+                        .build());
+
+                supplier.withPool(poolBuilder.build());
+            }
+        });
+
+        // Shipwreck Treasure
+        LootTableLoadingCallback.EVENT.register((resourceManager, manager, id, supplier, setter) -> {
+            if (SHIPWRECK_TREASURE_LOOT_TABLE_ID.equals(id)) {
+                FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
+                        .rolls(UniformLootTableRange.between(3.0F, 6.0F))
+                        .withEntry(ItemEntry.builder(UNBREAKABLE_BOOK)
+                        .weight(5)
+                        .build());
+
+                supplier.withPool(poolBuilder.build());
+            }
+        });
+
+        // Simple Dungeon
+        LootTableLoadingCallback.EVENT.register((resourceManager, manager, id, supplier, setter) -> {
+            if (SIMPLE_DUNGEON_LOOT_TABLE_ID.equals(id)) {
+                FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
+                        .rolls(UniformLootTableRange.between(1.0F, 3.0F))
+                        .withEntry(ItemEntry.builder(UNBREAKABLE_BOOK)
+                        .weight(10)
+                        .build());
+
+                supplier.withPool(poolBuilder.build());
+            }
+        });
+
+        // Stronghold Library
+        LootTableLoadingCallback.EVENT.register((resourceManager, manager, id, supplier, setter) -> {
+            if (STRONGHOLD_LIBRARY_LOOT_TABLE_ID.equals(id)) {
+                FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
+                        .rolls(UniformLootTableRange.between(2.0F, 10.0F))
+                        .withEntry(ItemEntry.builder(UNBREAKABLE_BOOK)
+                        .weight(10)
+                        .build());
+
+                supplier.withPool(poolBuilder.build());
+            }
+        });
+
+        // Fishing
+        LootTableLoadingCallback.EVENT.register((resourceManager, manager, id, supplier, setter) -> {
+            if (TREASURE_FISHING_LOOT_TABLE_ID.equals(id)) {
+                FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
+                        .rolls(ConstantLootTableRange.create(1))
+                        .withEntry(ItemEntry.builder(UNBREAKABLE_BOOK)
+                        .weight(10)
+                        .build());
+
+                supplier.withPool(poolBuilder.build());
+            }
+        });
 
     }
 }

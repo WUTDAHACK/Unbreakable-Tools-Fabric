@@ -1,17 +1,12 @@
 {
-  "type": "minecraft:crafting_shapeless",
+ "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
       "item": "minecraft:iron_axe"
     },
+
     {
-      "item": "minecraft:enchanted_book",
-         "Enchantments": [
-            {
-               "id": "minecraft:unbreaking",
-               "lvl": 1
-            }
-       ]
+      "item": "unbreakabletoolsfabric:unbreakable_book"
     }
   ],
   "result": {
