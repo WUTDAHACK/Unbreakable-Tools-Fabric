@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "unbreakabletoolsfabric:unbreakable_wooden_hoe",
+	"unbreakabletoolsfabric:unbreakable_stone_hoe",
+	"unbreakabletoolsfabric:unbreakable_iron_hoe",
+	"unbreakabletoolsfabric:unbreakable_diamond_hoe",
+	"unbreakabletoolsfabric:unbreakable_golden_hoe",
+	"unbreakabletoolsfabric:unbreakable_netherite_hoe"
+  ]
+}
