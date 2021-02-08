@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "unbreakabletoolsfabric:unbreakable_wooden_pickaxe",
+	"unbreakabletoolsfabric:unbreakable_stone_pickaxe",
+	"unbreakabletoolsfabric:unbreakable_iron_pickaxe",
+	"unbreakabletoolsfabric:unbreakable_diamond_pickaxe",
+	"unbreakabletoolsfabric:unbreakable_golden_pickaxe",
+	"unbreakabletoolsfabric:unbreakable_netherite_pickaxe"
+  ]
+}

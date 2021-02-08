@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "unbreakabletoolsfabric:unbreakable_wooden_sword",
+	"unbreakabletoolsfabric:unbreakable_stone_sword",
+	"unbreakabletoolsfabric:unbreakable_iron_sword",
+	"unbreakabletoolsfabric:unbreakable_diamond_sword",
+	"unbreakabletoolsfabric:unbreakable_golden_sword",
+	"unbreakabletoolsfabric:unbreakable_netherite_sword"
+  ]
+}

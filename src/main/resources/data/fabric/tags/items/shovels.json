@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "unbreakabletoolsfabric:unbreakable_wooden_shovel",
+	"unbreakabletoolsfabric:unbreakable_stone_shovel",
+	"unbreakabletoolsfabric:unbreakable_iron_shovel",
+	"unbreakabletoolsfabric:unbreakable_diamond_shovel",
+	"unbreakabletoolsfabric:unbreakable_golden_shovel",
+	"unbreakabletoolsfabric:unbreakable_netherite_shovel"
+  ]
+}
