@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:diamond_boots"
+    },
+
+    {
+      "item": "unbreakabletoolsfabric:unbreakable_book"
+    }
+
+  ],
+  "result": {
+    "item": "unbreakabletoolsfabric:unbreakable_diamond_boots"
+  }
+}
