@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:netherite_chestplate"
+    },
+
+    {
+      "item": "unbreakabletoolsfabric:unbreakable_book"
+    }
+
+  ],
+  "result": {
+    "item": "unbreakabletoolsfabric:unbreakable_netherite_chestplate"
+  }
+}

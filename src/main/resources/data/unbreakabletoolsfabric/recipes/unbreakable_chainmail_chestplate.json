@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:chainmail_chestplate"
+    },
+
+    {
+      "item": "unbreakabletoolsfabric:unbreakable_book"
+    }
+
+  ],
+  "result": {
+    "item": "unbreakabletoolsfabric:unbreakable_chainmail_chestplate"
+  }
+}

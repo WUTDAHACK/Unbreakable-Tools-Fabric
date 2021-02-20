@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:golden_helmet"
+    },
+
+    {
+      "item": "unbreakabletoolsfabric:unbreakable_book"
+    }
+
+  ],
+  "result": {
+    "item": "unbreakabletoolsfabric:unbreakable_golden_helmet"
+  }
+}

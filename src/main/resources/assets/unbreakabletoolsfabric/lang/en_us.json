@@ -38,5 +38,35 @@
   "item.unbreakabletoolsfabric.unbreakable_bow": "Unbreakable Bow",
   "item.unbreakabletoolsfabric.unbreakable_book": "Unbreakable Book",
 
+  "item.unbreakabletoolsfabric.unbreakable_leather_helmet": "Unbreakable Leather Helmet",
+  "item.unbreakabletoolsfabric.unbreakable_leather_chestplate": "Unbreakable Leather Tunic",
+  "item.unbreakabletoolsfabric.unbreakable_leather_leggings": "Unbreakable Leather Pants",
+  "item.unbreakabletoolsfabric.unbreakable_leather_boots": "Unbreakable Leather Boots",
+
+  "item.unbreakabletoolsfabric.unbreakable_chainmail_helmet": "Unbreakable Chainmail Helmet",
+  "item.unbreakabletoolsfabric.unbreakable_chainmail_chestplate": "Unbreakable Chainmail Chestplate",
+  "item.unbreakabletoolsfabric.unbreakable_chainmail_leggings": "Unbreakable Chainmail Leggings",
+  "item.unbreakabletoolsfabric.unbreakable_chainmail_boots": "Unbreakable Chainmail Boots",
+
+  "item.unbreakabletoolsfabric.unbreakable_iron_helmet": "Unbreakable Iron Helmet",
+  "item.unbreakabletoolsfabric.unbreakable_iron_chestplate": "Unbreakable Iron Chestplate",
+  "item.unbreakabletoolsfabric.unbreakable_iron_leggings": "Unbreakable Iron Leggings",
+  "item.unbreakabletoolsfabric.unbreakable_iron_boots": "Unbreakable Iron Boots",
+
+  "item.unbreakabletoolsfabric.unbreakable_diamond_helmet": "Unbreakable Diamond Helmet",
+  "item.unbreakabletoolsfabric.unbreakable_diamond_chestplate": "Unbreakable Diamond Chestplate",
+  "item.unbreakabletoolsfabric.unbreakable_diamond_leggings": "Unbreakable Diamond Leggings",
+  "item.unbreakabletoolsfabric.unbreakable_diamond_boots": "Unbreakable Diamond Boots",
+
+  "item.unbreakabletoolsfabric.unbreakable_golden_helmet": "Unbreakable Golden Helmet",
+  "item.unbreakabletoolsfabric.unbreakable_golden_chestplate": "Unbreakable Golden Chestplate",
+  "item.unbreakabletoolsfabric.unbreakable_golden_leggings": "Unbreakable Golden Leggings",
+  "item.unbreakabletoolsfabric.unbreakable_golden_boots": "Unbreakable Golden Boots",
+
+  "item.unbreakabletoolsfabric.unbreakable_netherite_helmet": "Unbreakable Netherite Helmet",
+  "item.unbreakabletoolsfabric.unbreakable_netherite_chestplate": "Unbreakable Netherite Chestplate",
+  "item.unbreakabletoolsfabric.unbreakable_netherite_leggings": "Unbreakable Netherite Leggings",
+  "item.unbreakabletoolsfabric.unbreakable_netherite_boots": "Unbreakable Netherite Boots",
+
   "itemGroup.unbreakabletoolsfabric.unbreakable_tools_group": "Unbreakable Tools"
 }
